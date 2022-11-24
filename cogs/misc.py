@@ -15,10 +15,10 @@ class Misc(commands.Cog):
         msg = await ctx.send("Pong!")
         t2 = time.monotonic()
         
-        latency = round((t2-t1)*1000)
-        heartbeat = round(self.bot.latency * 1000)
+        heartbeat = round((t2-t1)*1000)
+        latency = round(self.bot.latency * 1000)
         
-        e = discord.Embed(title="Rok Toolkit Ping")
+        e = discord.Embed(title="Rok Toolkit Ping", color=0x17AC87)
         e.add_field(name=f"⏱️ Latency", value=f"{latency}ms")
         e.add_field(name="💓 Heartbeat", value=f"{heartbeat}ms")
         await msg.edit(content="", embed=e)
