@@ -15,4 +15,4 @@ class Bot(commands.Bot):
                 await self.load_extension(f'cogs.{filename[:-3]}')
 
 bot = Bot()
-bot.run("Nzg4MTM0NjI2MTc0MTczMjA1.GxFx6e.IUmaxHkxEbYcv0jztDtJPr5bEN2DAKfbtajkq4") # Replace with your token
+bot.run("Bot Token") # Replace with your token
